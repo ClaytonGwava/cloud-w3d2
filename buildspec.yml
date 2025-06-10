@@ -7,7 +7,9 @@ phases:
   build:
     commands:
       - npm run build  # Builds the project
+
 artifacts:
   files:
     - '**/*'
-  base-directory: build  # Directory with output files (e.g., React app)
+  base-directory: build     # Focus on files in 'build/'
+  discard-paths: no         # Keep paths during artifact packaging
